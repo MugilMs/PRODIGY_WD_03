@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const X_CLASS = 'x';
     const O_CLASS = 'o';
@@ -20,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let oTurn;
 
     startGame();
-
-    restartButton.addEventListener('click', startGame);
 
     function startGame() {
         oTurn = false;
@@ -89,4 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    restartButton.addEventListener('click', startGame);
 });

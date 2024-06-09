@@ -46,6 +46,17 @@ h1 {
     background-color: #f1f1f1;
 }
 
+/* Added styles for X and O */
+.x::after {
+    content: 'X';
+    color: #ff5555; /* Red color for X */
+}
+
+.o::after {
+    content: 'O';
+    color: #5555ff; /* Blue color for O */
+}
+
 .message {
     display: none;
     flex-direction: column;
